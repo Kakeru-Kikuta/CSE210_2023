@@ -2,8 +2,9 @@ using System;
 
 class Program
 {
-    static void Main(string[] args)
+    static void main(string[] arge)
     {
-        Console.WriteLine("Hello Develop03 World!");
+        Reference scriptureReference = new Reference("Proverbs", "3", "5-6");
+        
     }
 }
