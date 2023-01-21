@@ -13,6 +13,6 @@ class Scripture
 
     public string toString()
     {
-        return string.Format("{0}")
+        return string.Format("{0}", ScriptureText);
     }
 }

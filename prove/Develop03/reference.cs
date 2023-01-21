@@ -13,5 +13,6 @@ class Reference
 
     public string toString()
     {
-        return
+        return string.Format("{0} {1}:{2}", book, chapter, verse);
     }
+}

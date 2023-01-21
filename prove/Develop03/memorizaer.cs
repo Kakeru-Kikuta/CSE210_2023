@@ -9,12 +9,12 @@ class Memorizer
     {
         scripture = _scripture;
         scripturteTextList = new List<string>();
-        convertoTextToList();
+        convertTextToList();
     }
 
-    private void convertoTextToList()
+    private void convertTextToList()
     {
-        scripturteTextList = scripturte.toString().split(" ").ToList();
+        scripturteTextList = scripture.toString().Split(" ").ToList();
     }
 
     public void removeWordsFromText()
@@ -25,10 +25,10 @@ class Memorizer
         do
         {
             int rndIndex = new Random().Next(0, scripturteTextList.Count());
-            scripturteTextList[rndIndex] = new string("_", scripturteTextList[rndIndex].Length);
+            scripturteTextList[rndIndex] = new string('_', scripturteTextList[rndIndex].Length);
             wordsRemoved++;
 
-        }while (wordsRemoved != numWordsToRemove);
+        }while (wordsRemoved != unmWordsToRemove);
     }
 
     public override string ToString()
@@ -44,8 +44,11 @@ class Memorizer
         {
             if (word.Contains("_") == false)
             {
-                ret
+                retvalue = true;
+                break;
             }
         }
+
+        return retvalue;
     }
 }
