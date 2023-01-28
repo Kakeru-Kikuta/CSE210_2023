@@ -28,11 +28,19 @@ class Program
             switch (userMenuInput)
             {
                 case 1:
-
+                    BreathingActivity activity = new BreathingActivity();
+                    activity.runActivityParentStart();
                     break;
                 case 2:
-                    ReflectingActivity activity = new RefrectingActivity();
-                    activity.runActivity();
+                    ReflectingActivity activity = new ReflectingActivity();
+                    activity.runActivityParentStart();
+                    break;
+                case 3: 
+                    ListningActivity activity = new ListningActivity();
+                    activity.runActivityParentStart();
+                    break;
+                case 4: 
+                    activity.runActivityParentEnd();
                     break;
 
             }

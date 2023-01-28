@@ -71,6 +71,14 @@ class ReflectingActivity : Activity
 
     public void displayQuestions()
     {
-        
+        Console.Clear();
+        Console.WriteLine("Consider the following: ");
+        Console.WriteLine();
+
+        int randomIndex = new Random() .Next(0, prompt.Count());
+        Console.WriteLine(prompt[randomIndex]);
+        Console.WriteLine();
+
     }
+    
 }
