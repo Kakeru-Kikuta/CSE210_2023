@@ -1,6 +1,6 @@
 using System;
 
-class OddEven
+public class OddEven
 {
     int num;
     public static bool IsEven(int num)
